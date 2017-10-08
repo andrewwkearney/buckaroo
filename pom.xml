@@ -38,7 +38,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <project.junit.jupiter.version>5.0.0-RC3</project.junit.jupiter.version>
+    <project.junit.jupiter.version>5.0.0</project.junit.jupiter.version>
     <project.jdk.version>1.8</project.jdk.version>
   </properties>
 
