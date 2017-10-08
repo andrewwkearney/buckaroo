@@ -54,7 +54,7 @@
     <!-- Testing dependencies -->
     <dependency>
       <groupId>org.junit.jupiter</groupId>
-      <artifactId>junit-jupiter-engine</artifactId>
+      <artifactId>junit-jupiter-api</artifactId>
       <version>${project.junit.jupiter.version}</version>
       <scope>test</scope>
     </dependency>
