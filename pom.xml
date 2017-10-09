@@ -1,79 +1,79 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+    <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.androsaces.tools</groupId>
-  <artifactId>buckaroo</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <packaging>jar</packaging>
+    <groupId>com.androsaces.tools</groupId>
+    <artifactId>buckaroo</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
 
-  <name>buckaroo</name>
-  <description>Toolbelt project to reduce boilerplate code and provide some handy methods</description>
-  <url>http://github.com/andrewwkearney/buckaroo</url>
-  <organization>
-    <name>Androsaces</name>
-  </organization>
-  <!--licenses>
-    <license>
-      <name></name>
-      <url></url>
-      <distribution></distribution>
-    </license>
-  </licenses-->
+    <name>buckaroo</name>
+    <description>Toolbelt project to reduce boilerplate code and provide some handy methods</description>
+    <url>http://github.com/andrewwkearney/buckaroo</url>
+    <organization>
+        <name>Androsaces</name>
+    </organization>
+    <!--licenses>
+      <license>
+        <name></name>
+        <url></url>
+        <distribution></distribution>
+      </license>
+    </licenses-->
 
-  <developers>
-    <developer>
-      <name>Andrew Kearney</name>
-      <email>andrewwkearney@gmail.com</email>
-      <timezone>Europe/London</timezone>
-    </developer>
-  </developers>
+    <developers>
+        <developer>
+            <name>Andrew Kearney</name>
+            <email>andrewwkearney@gmail.com</email>
+            <timezone>Europe/London</timezone>
+        </developer>
+    </developers>
 
-  <scm>
-    <connection>https://github.com/andrewwkearney/buckaroo.git</connection>
-    <url>https://github.com/andrewwkearney/buckaroo</url>
-    <tag>HEAD</tag>
-  </scm>
+    <scm>
+        <connection>https://github.com/andrewwkearney/buckaroo.git</connection>
+        <url>https://github.com/andrewwkearney/buckaroo</url>
+        <tag>HEAD</tag>
+    </scm>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <project.junit.jupiter.version>5.0.0</project.junit.jupiter.version>
-    <project.jdk.version>1.8</project.jdk.version>
-  </properties>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.junit.jupiter.version>5.0.0</project.junit.jupiter.version>
+        <project.jdk.version>1.8</project.jdk.version>
+    </properties>
 
-  <dependencies>
-    <!-- 3rd party -->
-    <!-- Logging -->
-    <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-api</artifactId>
-      <version>1.7.25</version>
-    </dependency>
+    <dependencies>
+        <!-- 3rd party -->
+        <!-- Logging -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.25</version>
+        </dependency>
 
-    <!-- Testing dependencies -->
-    <dependency>
-      <groupId>org.junit.jupiter</groupId>
-      <artifactId>junit-jupiter-api</artifactId>
-      <version>${project.junit.jupiter.version}</version>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
+        <!-- Testing dependencies -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>${project.junit.jupiter.version}</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 
-  <build>
-    <pluginManagement>
-      <plugins>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.6.2</version>
-          <configuration>
-            <source>${project.jdk.version}</source>
-            <target>${project.jdk.version}</target>
-          </configuration>
-        </plugin>
-      </plugins>
-    </pluginManagement>
-  </build>
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.6.2</version>
+                    <configuration>
+                        <source>${project.jdk.version}</source>
+                        <target>${project.jdk.version}</target>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
 
 </project>
