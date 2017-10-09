@@ -72,6 +72,11 @@
                         <target>${project.jdk.version}</target>
                     </configuration>
                 </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugin</groupId>
+                    <artifactId>maven-javadoc-plugin</artifactId>
+                    <version>3.0.0-M1</version>
+                </plugin>
             </plugins>
         </pluginManagement>
     </build>
