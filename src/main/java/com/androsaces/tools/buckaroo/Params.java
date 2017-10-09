@@ -18,6 +18,7 @@ public class Params {
      *
      * @param param     the parameter being checked.
      * @param paramName the name of the parameter.
+     * @param <T>       the type of the parameter being checked.
      * @return the parameter value.
      * @throws IllegalArgumentException if the given parameter is null.
      */
@@ -30,6 +31,7 @@ public class Params {
      * Checks to ensure that the given parameter is not null.
      *
      * @param param the parameter being checked.
+     * @param <T>   the type of the parameter being checked.
      * @return the parameter value.
      * @throws IllegalArgumentException if the given parameter is null.
      */
