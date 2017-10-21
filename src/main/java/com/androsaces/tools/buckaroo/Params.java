@@ -36,7 +36,7 @@ public class Params {
      * @throws IllegalArgumentException if the given parameter is null.
      */
     public static <T> T notNull(T param) {
-        if (param == null) throw new IllegalArgumentException("param cannot be null");
+        if (param == null) throw new IllegalArgumentException("parameter cannot be null");
         return param;
     }
 
