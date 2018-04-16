@@ -13,7 +13,6 @@ import org.slf4j.LoggerFactory;
  *
  * @author Andrew Kearney
  */
-@SuppressWarnings("all")
 public class SystemInfo {
     private static final Logger logger = LoggerFactory.getLogger(SystemInfo.class);
 
