@@ -13,6 +13,7 @@ import org.slf4j.LoggerFactory;
  *
  * @author Andrew Kearney
  */
+@SuppressWarnings({"unused", "WeakerAccess"})
 public class SystemInfo {
     private static final Logger logger = LoggerFactory.getLogger(SystemInfo.class);
 
