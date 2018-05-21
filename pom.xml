@@ -38,8 +38,9 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.junit.jupiter.version>5.1.1</project.junit.jupiter.version>
-        <project.jdk.version>1.8</project.jdk.version>
+        <project.junit.jupiter.version>5.2.0</project.junit.jupiter.version>
+        <project.junit.platform.version>1.2.0</project.junit.platform.version>
+        <project.jdk.version>10</project.jdk.version>
     </properties>
 
     <dependencies>
@@ -69,7 +70,7 @@
         <dependency>
             <groupId>org.junit.platform</groupId>
             <artifactId>junit-platform-engine</artifactId>
-            <version>1.1.1</version>
+            <version>${project.junit.platform.version}</version>
             <scope>test</scope>
         </dependency>
 
@@ -87,16 +88,34 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
-                    <version>3.6.2</version>
+                    <version>3.7.0</version>
                     <configuration>
                         <source>${project.jdk.version}</source>
                         <target>${project.jdk.version}</target>
+                        <release>${project.jdk.version}</release>
                     </configuration>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugin</groupId>
                     <artifactId>maven-javadoc-plugin</artifactId>
                     <version>3.0.0-M1</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>2.21.0</version>
+                    <dependencies>
+                        <dependency>
+                            <groupId>org.junit.platform</groupId>
+                            <artifactId>junit-platform-surefire-provider</artifactId>
+                            <version>1.2.0</version>
+                        </dependency>
+                        <dependency>
+                            <groupId>org.junit.jupiter</groupId>
+                            <artifactId>junit-jupiter-engine</artifactId>
+                            <version>5.2.0</version>
+                        </dependency>
+                    </dependencies>
                 </plugin>
             </plugins>
         </pluginManagement>
