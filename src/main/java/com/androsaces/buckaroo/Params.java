@@ -126,6 +126,7 @@ public class Params {
      *
      * @param p   the list to be checked.
      * @param <T> the type of the list being checked.
+     * @return the parameter value.
      * @throws IllegalArgumentException if the given list is empty.
      * @since 1.1.0
      */
@@ -142,6 +143,7 @@ public class Params {
      * @param p   the list to be checked.
      * @param t   the value not allowed to be in the list.
      * @param <T> the type of values being checked.
+     * @return the parameter value.
      * @throws IllegalArgumentException if the given list contains the given value.
      * @since 1.1.0
      */
