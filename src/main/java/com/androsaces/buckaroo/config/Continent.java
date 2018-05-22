@@ -11,12 +11,36 @@ package com.androsaces.buckaroo.config;
  * @since 1.1.0
  */
 public enum Continent {
+    /**
+     * Africa
+     */
     Africa,
+    /**
+     * North America
+     */
     NorthAmerica,
+    /**
+     * South America
+     */
     SouthAmerica,
+    /**
+     * Antarctica
+     */
     Antarctica,
+    /**
+     * Asia
+     */
     Asia,
+    /**
+     * Australia
+     */
     Australia,
+    /**
+     * Europe
+     */
     Europe,
+    /**
+     * Oceania
+     */
     Oceania
 }
