@@ -1,7 +1,15 @@
-package com.androsaces.tools.buckaroo;
+/*
+ * Copyright © 2018 androsaces. All rights reserved.
+ */
+
+package com.androsaces.buckaroo;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -112,5 +120,41 @@ class ParamsTest {
     void testLongNotNegativeWithPositiveValue() {
         long expected = 10L;
         assertSame(expected, Params.notNegative(expected));
+    }
+
+    @Test
+    @DisplayName("notEmptyList() provided empty list")
+    void testNotEmptyList() {
+        Throwable exception = assertThrows(IllegalArgumentException.class, () -> Params.notEmptyList(Collections.emptyList()));
+        assertEquals("list cannot be empty", exception.getMessage());
+    }
+
+    @Test
+    @DisplayName("notEmptyList() returns a non-empty list")
+    void testNotEmptyListWithNotEmptyList() {
+        var stringList = Arrays.asList("Test", "String", "goes here");
+        List<String> expected = Params.notEmptyList(stringList);
+        assertEquals(expected, stringList);
+        assertFalse(expected.isEmpty());
+    }
+
+    @Test
+    @DisplayName("listCannotContain() provided a list that doesn't contain element")
+    void testListCannotContainWithExcludedString() {
+        Throwable excludedString = assertThrows(IllegalArgumentException.class, () -> Params.listCannotContain(Arrays.asList("test", "string", "example"), "example"));
+        assertEquals("list cannot contain example", excludedString.getMessage());
+        Throwable excludedInteger = assertThrows(IllegalArgumentException.class, () -> Params.listCannotContain(Arrays.asList(1, 2, 3, 4), 4));
+        assertEquals("list cannot contain 4", excludedInteger.getMessage());
+        Throwable excludedChar = assertThrows(IllegalArgumentException.class, () -> Params.listCannotContain(Arrays.asList('a', 'b', 'c', 'd'), 'a'));
+        assertEquals("list cannot contain a", excludedChar.getMessage());
+    }
+
+    @Test
+    @DisplayName("listCannotContain() provided a list that doesn't contain element")
+    void testListCannotContain() {
+        var stringList = Arrays.asList("test", "string");
+        List<String> expected = Params.listCannotContain(stringList, "example");
+        assertNotNull(expected);
+        assertFalse(expected.isEmpty());
     }
 }

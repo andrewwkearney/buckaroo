@@ -1,4 +1,10 @@
-package com.androsaces.tools.buckaroo;
+/*
+ * Copyright © 2018 androsaces. All rights reserved.
+ */
+
+package com.androsaces.buckaroo;
+
+import java.util.List;
 
 /**
  * This class provides utility methods that will validate the parameters passed
@@ -21,6 +27,7 @@ public class Params {
      * @param <T>       the type of the parameter being checked.
      * @return the parameter value.
      * @throws IllegalArgumentException if the given parameter is null.
+     * @since 1.0.0
      */
     public static <T> T notNull(T param, String paramName) {
         if (param == null) throw new IllegalArgumentException(paramName + " cannot be null");
@@ -34,6 +41,7 @@ public class Params {
      * @param <T>   the type of the parameter being checked.
      * @return the parameter value.
      * @throws IllegalArgumentException if the given parameter is null.
+     * @since 1.0.0
      */
     public static <T> T notNull(T param) {
         if (param == null) throw new IllegalArgumentException("parameter cannot be null");
@@ -46,6 +54,7 @@ public class Params {
      * @param param the string being checked.
      * @return the parameter value.
      * @throws IllegalArgumentException if the given parameter is null or an empty string.
+     * @since 1.0.0
      */
     public static String notEmpty(String param) {
         if (notNull(param).isEmpty()) throw new IllegalArgumentException("method parameter cannot be an empty string");
@@ -61,6 +70,7 @@ public class Params {
      * @param max the maximum bound.
      * @return the parameter value.
      * @throws IllegalArgumentException if the given parameter is not with the range.
+     * @since 1.0.0
      */
     public static int inRange(int p, int min, int max) {
         if (p < min || p > max)
@@ -77,6 +87,7 @@ public class Params {
      * @param max the maximum bound.
      * @return the parameter value.
      * @throws IllegalArgumentException if the given parameter is not with the range.
+     * @since 1.0.0
      */
     public static long inRange(long p, long min, long max) {
         if (p < min || p > max)
@@ -90,6 +101,7 @@ public class Params {
      * @param p the number to be checked.
      * @return the parameter value.
      * @throws IllegalArgumentException if the given parameter is less than zero.
+     * @since 1.0.0
      */
     public static int notNegative(int p) {
         if (p < 0) throw new IllegalArgumentException("parameter " + p + " cannot be less than zero");
@@ -102,9 +114,39 @@ public class Params {
      * @param p the number to be checked.
      * @return the parameter value.
      * @throws IllegalArgumentException if the given parameter is less than zero.
+     * @since 1.0.0
      */
     public static long notNegative(long p) {
         if (p < 0) throw new IllegalArgumentException("parameter " + p + " cannot be less than zero");
+        return p;
+    }
+
+    /**
+     * Checks to ensure the {@link List} passed in is not empty.
+     *
+     * @param p   the list to be checked.
+     * @param <T> the type of the list being checked.
+     * @throws IllegalArgumentException if the given list is empty.
+     * @since 1.1.0
+     */
+    public static <T> List<T> notEmptyList(List<T> p) {
+        if (p.isEmpty()) throw new IllegalArgumentException("list cannot be empty");
+        return p;
+    }
+
+    /**
+     * Checks to ensure the {@link List} provided does not contain the value
+     * provided in the second parameter. It will also check to make sure the
+     * list is not empty using {@link #notEmptyList(List)}.
+     *
+     * @param p   the list to be checked.
+     * @param t   the value not allowed to be in the list.
+     * @param <T> the type of values being checked.
+     * @throws IllegalArgumentException if the given list contains the given value.
+     * @since 1.1.0
+     */
+    public static <T> List<T> listCannotContain(List<T> p, T t) {
+        if (notEmptyList(p).contains(t)) throw new IllegalArgumentException("list cannot contain " + t);
         return p;
     }
 }
