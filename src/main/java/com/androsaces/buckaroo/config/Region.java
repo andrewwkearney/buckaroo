@@ -31,7 +31,7 @@ public enum Region {
      * sometimes may include western Russia.
      * </p>
      */
-    EMEA("Europe, Middle East and Africa"),
+    EMEA("Europe, Middle East and AFRICA"),
     /**
      * Global region.
      * <p>

@@ -18,7 +18,7 @@ class RegionTest {
     void testGetDescription() {
         assertEquals("Americas", Region.AMER.getDescription());
         assertEquals("Asia Pacific", Region.APAC.getDescription());
-        assertEquals("Europe, Middle East and Africa", Region.EMEA.getDescription());
+        assertEquals("Europe, Middle East and AFRICA", Region.EMEA.getDescription());
         assertEquals("Global", Region.GLOB.getDescription());
     }
 }

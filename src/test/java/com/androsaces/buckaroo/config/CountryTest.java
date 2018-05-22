@@ -26,7 +26,7 @@ class CountryTest {
         assertEquals(Region.APAC, Country.CCK.getRegion());
         assertEquals(Region.APAC, Country.JPN.getRegion());
         assertEquals(Region.APAC, Country.NZL.getRegion());
-        // Europe
+        // EUROPE
         assertEquals(Region.EMEA, Country.FRA.getRegion());
         assertEquals(Region.EMEA, Country.GBR.getRegion());
         assertEquals(Region.EMEA, Country.IRL.getRegion());
@@ -40,41 +40,41 @@ class CountryTest {
     @Test
     void testGetContinentName() {
         // North America
-        assertEquals(Continent.NorthAmerica, Country.CAN.getContinent());
-        assertEquals(Continent.NorthAmerica, Country.CUB.getContinent());
-        assertEquals(Continent.NorthAmerica, Country.LCA.getContinent());
-        assertEquals(Continent.NorthAmerica, Country.MEX.getContinent());
-        assertEquals(Continent.NorthAmerica, Country.USA.getContinent());
+        assertEquals(Continent.NORTH_AMERICA, Country.CAN.getContinent());
+        assertEquals(Continent.NORTH_AMERICA, Country.CUB.getContinent());
+        assertEquals(Continent.NORTH_AMERICA, Country.LCA.getContinent());
+        assertEquals(Continent.NORTH_AMERICA, Country.MEX.getContinent());
+        assertEquals(Continent.NORTH_AMERICA, Country.USA.getContinent());
         // South America
-        assertEquals(Continent.SouthAmerica, Country.BRA.getContinent());
-        assertEquals(Continent.SouthAmerica, Country.CHL.getContinent());
-        assertEquals(Continent.SouthAmerica, Country.ECU.getContinent());
-        assertEquals(Continent.SouthAmerica, Country.PER.getContinent());
-        assertEquals(Continent.SouthAmerica, Country.URY.getContinent());
+        assertEquals(Continent.SOUTH_AMERICA, Country.BRA.getContinent());
+        assertEquals(Continent.SOUTH_AMERICA, Country.CHL.getContinent());
+        assertEquals(Continent.SOUTH_AMERICA, Country.ECU.getContinent());
+        assertEquals(Continent.SOUTH_AMERICA, Country.PER.getContinent());
+        assertEquals(Continent.SOUTH_AMERICA, Country.URY.getContinent());
         // Antarctica
-        assertEquals(Continent.Antarctica, Country.ATA.getContinent());
-        assertEquals(Continent.Antarctica, Country.BVT.getContinent());
-        assertEquals(Continent.Antarctica, Country.SGS.getContinent());
+        assertEquals(Continent.ANTARCTICA, Country.ATA.getContinent());
+        assertEquals(Continent.ANTARCTICA, Country.BVT.getContinent());
+        assertEquals(Continent.ANTARCTICA, Country.SGS.getContinent());
         // Asia
-        assertEquals(Continent.Asia, Country.AFG.getContinent());
-        assertEquals(Continent.Asia, Country.CCK.getContinent());
-        assertEquals(Continent.Asia, Country.IND.getContinent());
-        assertEquals(Continent.Asia, Country.JPN.getContinent());
-        assertEquals(Continent.Asia, Country.SYR.getContinent());
+        assertEquals(Continent.ASIA, Country.AFG.getContinent());
+        assertEquals(Continent.ASIA, Country.CCK.getContinent());
+        assertEquals(Continent.ASIA, Country.IND.getContinent());
+        assertEquals(Continent.ASIA, Country.JPN.getContinent());
+        assertEquals(Continent.ASIA, Country.SYR.getContinent());
         // Australia
-        assertEquals(Continent.Australia, Country.AUS.getContinent());
-        // Europe
-        assertEquals(Continent.Europe, Country.FRA.getContinent());
-        assertEquals(Continent.Europe, Country.GBR.getContinent());
-        assertEquals(Continent.Europe, Country.IRL.getContinent());
-        assertEquals(Continent.Europe, Country.JEY.getContinent());
-        assertEquals(Continent.Europe, Country.LTU.getContinent());
+        assertEquals(Continent.AUSTRALIA, Country.AUS.getContinent());
+        // EUROPE
+        assertEquals(Continent.EUROPE, Country.FRA.getContinent());
+        assertEquals(Continent.EUROPE, Country.GBR.getContinent());
+        assertEquals(Continent.EUROPE, Country.IRL.getContinent());
+        assertEquals(Continent.EUROPE, Country.JEY.getContinent());
+        assertEquals(Continent.EUROPE, Country.LTU.getContinent());
         // Oceania
-        assertEquals(Continent.Oceania, Country.ASM.getContinent());
-        assertEquals(Continent.Oceania, Country.COK.getContinent());
-        assertEquals(Continent.Oceania, Country.FJI.getContinent());
-        assertEquals(Continent.Oceania, Country.GUM.getContinent());
-        assertEquals(Continent.Oceania, Country.NZL.getContinent());
+        assertEquals(Continent.OCEANIA, Country.ASM.getContinent());
+        assertEquals(Continent.OCEANIA, Country.COK.getContinent());
+        assertEquals(Continent.OCEANIA, Country.FJI.getContinent());
+        assertEquals(Continent.OCEANIA, Country.GUM.getContinent());
+        assertEquals(Continent.OCEANIA, Country.NZL.getContinent());
     }
 
     @Test

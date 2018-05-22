@@ -15,13 +15,13 @@ import org.junit.jupiter.api.Test;
 class ContinentTest {
     @Test
     void testGetDescription() {
-        Assertions.assertEquals("Africa", Continent.Africa.toString());
-        Assertions.assertEquals("NorthAmerica", Continent.NorthAmerica.toString());
-        Assertions.assertEquals("SouthAmerica", Continent.SouthAmerica.toString());
-        Assertions.assertEquals("Antarctica", Continent.Antarctica.toString());
-        Assertions.assertEquals("Asia", Continent.Asia.toString());
-        Assertions.assertEquals("Australia", Continent.Australia.toString());
-        Assertions.assertEquals("Europe", Continent.Europe.toString());
-        Assertions.assertEquals("Oceania", Continent.Oceania.toString());
+        Assertions.assertEquals("Africa", Continent.AFRICA.toString());
+        Assertions.assertEquals("North America", Continent.NORTH_AMERICA.toString());
+        Assertions.assertEquals("South America", Continent.SOUTH_AMERICA.toString());
+        Assertions.assertEquals("Antarctica", Continent.ANTARCTICA.toString());
+        Assertions.assertEquals("Asia", Continent.ASIA.toString());
+        Assertions.assertEquals("Australia", Continent.AUSTRALIA.toString());
+        Assertions.assertEquals("Europe", Continent.EUROPE.toString());
+        Assertions.assertEquals("Oceania", Continent.OCEANIA.toString());
     }
 }

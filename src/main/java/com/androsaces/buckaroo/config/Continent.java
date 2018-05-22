@@ -12,35 +12,80 @@ package com.androsaces.buckaroo.config;
  */
 public enum Continent {
     /**
-     * Africa
+     * Africa.
+     * <p>
+     * The continent of Africa along with islands including Madagascar and
+     * other outlying archipelagos.
      */
-    Africa,
+    AFRICA("Africa"),
     /**
-     * North America
+     * Antarctica.
      */
-    NorthAmerica,
+    ANTARCTICA("Antarctica"),
     /**
-     * South America
+     * Asia.
+     * <p>
+     * The continent of Asia including China, Russia, Japan, India, Sri Lanka
+     * and other small archipelagos.
      */
-    SouthAmerica,
+    ASIA("Asia"),
     /**
-     * Antarctica
+     * Australia.
+     * <p>
+     * The continent of Australia, including mainland Australia, Tasmania,
+     * New Guinea and New Britain.
      */
-    Antarctica,
+    AUSTRALIA("Australia"),
     /**
-     * Asia
+     * Europe.
+     * <p>
+     * The continent of Europe including western Russia and Turkey and islands
+     * including Ireland, United Kingdom, Iceland and smaller islands.
      */
-    Asia,
+    EUROPE("Europe"),
     /**
-     * Australia
+     * North America.
+     * <p>
+     * The continent of North America including the United States of America,
+     * Canada, Mexico and other central American countries.
      */
-    Australia,
+    NORTH_AMERICA("North America"),
     /**
-     * Europe
+     * Oceania.
+     * <p>
+     * While not technically a continent, it includes other countries in the
+     * Asia Pacific region like New Zealand, Hawaii, Guam, Fiji and French
+     * Polynesia.
      */
-    Europe,
+    OCEANIA("Oceania"),
     /**
-     * Oceania
+     * South America.
+     * <p>
+     * The continent of South America including Galapagos Islands, and the
+     * Falklands islands.
      */
-    Oceania
+    SOUTH_AMERICA("South America");
+
+    private final String description;
+
+    Continent(String description) {
+        this.description = description;
+    }
+
+    /**
+     * Gets the description of the continent.
+     *
+     * @return the description of the continent.
+     */
+    public String getDescription() {
+        return description;
+    }
+
+    /**
+     * @see Object#toString()
+     */
+    @Override
+    public String toString() {
+        return description;
+    }
 }
