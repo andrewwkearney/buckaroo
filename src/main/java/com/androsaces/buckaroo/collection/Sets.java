@@ -1,4 +1,8 @@
-package com.androsaces.tools.buckaroo.collection;
+/*
+ * Copyright © 2018 androsaces. All rights reserved.
+ */
+
+package com.androsaces.buckaroo.collection;
 
 import java.util.HashSet;
 import java.util.Set;
