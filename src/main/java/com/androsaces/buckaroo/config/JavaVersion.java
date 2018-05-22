@@ -2,7 +2,7 @@
  * Copyright © 2018 androsaces. All rights reserved.
  */
 
-package com.androsaces.tools.buckaroo.config;
+package com.androsaces.buckaroo.config;
 
 /**
  * An enum that represents the valid versions of the Java specification. This

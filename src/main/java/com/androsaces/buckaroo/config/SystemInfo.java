@@ -2,7 +2,7 @@
  * Copyright © 2018 androsaces. All rights reserved.
  */
 
-package com.androsaces.tools.buckaroo.config;
+package com.androsaces.buckaroo.config;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

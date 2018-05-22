@@ -1,4 +1,8 @@
-package com.androsaces.tools.buckaroo.annotation;
+/*
+ * Copyright © 2018 androsaces. All rights reserved.
+ */
+
+package com.androsaces.buckaroo.annotation;
 
 import java.lang.annotation.*;
 

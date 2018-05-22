@@ -1,8 +1,8 @@
 /*
- * Copyright © 2017 androsaces. All rights reserved.
+ * Copyright © 2018 androsaces. All rights reserved.
  */
 
-package com.androsaces.tools.buckaroo.config;
+package com.androsaces.buckaroo.config;
 
 /**
  * This enumeration defines the continents.
