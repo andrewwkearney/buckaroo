@@ -14,6 +14,7 @@
     <organization>
         <name>Androsaces</name>
     </organization>
+    
     <!--licenses>
       <license>
         <name></name>
@@ -33,6 +34,7 @@
     <scm>
         <connection>https://github.com/andrewwkearney/buckaroo.git</connection>
         <url>https://github.com/andrewwkearney/buckaroo</url>
+        <developerConnection>scm:git:git@github.com:andrewwkearney/buckaroo.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
 
@@ -94,6 +96,11 @@
                         <target>${project.jdk.version}</target>
                         <release>${project.jdk.version}</release>
                     </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-release-plugin</artifactId>
+                    <version>2.5.3</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugin</groupId>
