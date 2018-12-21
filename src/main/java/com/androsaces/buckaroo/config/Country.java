@@ -198,6 +198,7 @@ public enum Country {
     PYF(APAC, Continent.OCEANIA, "French Polynesia"),
     QAT(EMEA, Continent.ASIA, "Qatar"),
     REU(EMEA, Continent.AFRICA, "Reunion"),
+    RHO(EMEA, Continent.AFRICA, "Southern Rhodesia"),
     ROU(EMEA, Continent.EUROPE, "Romania"),
     RUS(EMEA, Continent.ASIA, "Russia"),
     RWA(EMEA, Continent.AFRICA, "Rwanda"),
