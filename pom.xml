@@ -39,12 +39,12 @@
     </scm>
 
     <properties>
-        <maven.compiler.source>10</maven.compiler.source>
-        <maven.compiler.target>10</maven.compiler.target>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.junit.jupiter.version>5.2.0</project.junit.jupiter.version>
         <project.junit.platform.version>1.2.0</project.junit.platform.version>
-        <project.jdk.version>10</project.jdk.version>
+        <project.jdk.version>11</project.jdk.version>
     </properties>
 
     <dependencies>
@@ -107,7 +107,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-plugin</artifactId>
-                    <version>2.22.0</version>
+                    <version>3.0.0-M3</version>
                     <dependencies>
                         <dependency>
                             <groupId>org.junit.platform</groupId>
