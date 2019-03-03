@@ -54,6 +54,14 @@ class ParamsTest {
     }
 
     @Test
+    @DisplayName("notEmpty() provided with a string of spaces")
+    void testEmptyStringWithAStringOfSpaces() {
+        String expected = "   ";
+        Throwable exception = assertThrows(IllegalArgumentException.class, () -> Params.notEmpty(expected));
+        assertEquals("method parameter cannot be an empty string", exception.getMessage());
+    }
+
+    @Test
     @DisplayName("notEmpty() provided a non-empty string")
     void testEmptyStringWithNonEmptyString() {
         String expected = "Test String";

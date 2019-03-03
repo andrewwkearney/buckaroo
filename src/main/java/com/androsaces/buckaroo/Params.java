@@ -57,7 +57,7 @@ public class Params {
      * @since 1.0.0
      */
     public static String notEmpty(String param) {
-        if (notNull(param).isEmpty()) throw new IllegalArgumentException("method parameter cannot be an empty string");
+        if (notNull(param).trim().isEmpty()) throw new IllegalArgumentException("method parameter cannot be an empty string");
         return param;
     }
 
