@@ -1,5 +1,5 @@
 /**
  * Provides interfaces that define contracts that conform to commonly used
- * patterns.
+ * patterns like those defined by the GoF.
  */
 package com.androsaces.buckaroo.pattern;
