@@ -66,7 +66,17 @@ public enum JavaVersion {
     /**
      * Java SE 11
      */
-    JAVA_11(11.0f, "11");
+    JAVA_11(11.0f, "11"),
+
+    /**
+     * Java SE 12
+     */
+    JAVA_12(12.0f, "12"),
+
+    /**
+     * Java SE 13
+     */
+    JAVA_13(13.0f, "13");
 
     private final float value;
     private final String name;
@@ -105,6 +115,8 @@ public enum JavaVersion {
         else if ("9".equals(version)) return JAVA_9;
         else if ("10".equals(version)) return JAVA_10;
         else if ("11".equals(version)) return JAVA_11;
+        else if ("12".equals(version)) return JAVA_12;
+        else if ("13".equals(version)) return JAVA_13;
         else return null;
     }
 }
