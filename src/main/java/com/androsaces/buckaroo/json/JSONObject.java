@@ -1,5 +1,5 @@
 /*
- * Copyright © 2019 androsaces. All rights reserved.
+ * Copyright &copy; 2019 androsaces. All rights reserved.
  */
 
 package com.androsaces.buckaroo.json;
@@ -68,6 +68,8 @@ public class JSONObject {
 
     /**
      * Returns the formatted JSON string
+     *
+     * @return a formatted JSON string
      */
     public String getJSONString() {
         return mJSONString;
@@ -75,6 +77,8 @@ public class JSONObject {
 
     /**
      * Returns the Java object that was created by parsing the JSON string
+     *
+     * @return a formatted JSON string
      */
     public Object getJavaObject() {
         return mJavaObject;
