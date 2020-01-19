@@ -1,5 +1,5 @@
 /*
- * Copyright © 2019 androsaces. All rights reserved.
+ * Copyright &copy; 2019 androsaces. All rights reserved.
  */
 
 package com.androsaces.buckaroo.config;
