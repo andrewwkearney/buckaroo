@@ -3,6 +3,8 @@ open module com.androsaces.buckaroo {
     exports com.androsaces.buckaroo.annotation;
     exports com.androsaces.buckaroo.collection;
     exports com.androsaces.buckaroo.config;
+    exports com.androsaces.buckaroo.functional;
+    exports com.androsaces.buckaroo.json;
     exports com.androsaces.buckaroo.pattern;
 
     requires java.base;
