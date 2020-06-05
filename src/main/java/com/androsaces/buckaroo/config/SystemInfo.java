@@ -181,7 +181,7 @@ public class SystemInfo {
     public static final boolean IS_OS_MACOS_SIERRA = getOsMatches("Mac OS X", "10.12");
     /** Is {@code true} if this is a macOS High Sierra Operating System. */
     public static final boolean IS_OS_MACOS_HIGH_SIERRA = getOsMatches("Mac OS X", "10.13");
-    /** Is {@code true} if this is a macOS Catalina Operating System. */
+    /** Is {@code true} if this is a macOS Mojave Operating System. */
     public static final boolean IS_OS_MASOS_MOJAVE = getOsMatches("Mac OS X", "10.14");
     /** Is {@code true} if this is a macOS Catalina Operating System. */
     public static final boolean IS_OS_MASOS_CATALINA = getOsMatches("Mac OS X", "10.15");
