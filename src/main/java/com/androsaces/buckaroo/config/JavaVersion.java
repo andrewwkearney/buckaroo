@@ -54,29 +54,39 @@ public enum JavaVersion {
     JAVA_1_8(1.8f, "8"),
 
     /**
-     * Java SE 9
+     * Java SE 9.0.x
      */
     JAVA_9(9.0f, "9"),
 
     /**
-     * Java SE 10
+     * Java SE 10.0.x
      */
     JAVA_10(10.0f, "10"),
 
     /**
-     * Java SE 11
+     * Java SE 11.0.x
      */
     JAVA_11(11.0f, "11"),
 
     /**
-     * Java SE 12
+     * Java SE 12.0.x
      */
     JAVA_12(12.0f, "12"),
 
     /**
-     * Java SE 13
+     * Java SE 13.0.x
      */
-    JAVA_13(13.0f, "13");
+    JAVA_13(13.0f, "13"),
+
+    /**
+     * Java SE 14.0.x
+     */
+    JAVA_14(14.0f, "14"),
+
+    /**
+     * Java SE 15.0.x
+     */
+    JAVA_15(15.0f, "15");
 
     private final float value;
     private final String name;
@@ -117,6 +127,8 @@ public enum JavaVersion {
         else if ("11".equals(version)) return JAVA_11;
         else if ("12".equals(version)) return JAVA_12;
         else if ("13".equals(version)) return JAVA_13;
+        else if ("14".equals(version)) return JAVA_14;
+        else if ("15".equals(version)) return JAVA_15;
         else return null;
     }
 }

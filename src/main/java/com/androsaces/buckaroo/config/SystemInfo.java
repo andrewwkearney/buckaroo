@@ -130,14 +130,18 @@ public class SystemInfo {
     @Deprecated public static final boolean IS_JAVA_1_9 = getJavaVersionMatches("9");
     /** Is {@code true} if this is Java version 9 or any 9.x.y version. */
     public static final boolean IS_JAVA_9 = getJavaVersionMatches("9");
-    /** Is {@code true} if this is Java version 10 or any 10.x.y version. */
+    /** Is {@code true} if this is any Java 10.x.y version. */
     public static final boolean IS_JAVA_10 = getJavaVersionMatches("10");
-    /** Is {@code true} if this is Java version 10 or any 11.x.y version. */
+    /** Is {@code true} if this is any Java 11.x.y version. */
     public static final boolean IS_JAVA_11 = getJavaVersionMatches("11");
-    /** Is {@code true} if this is Java version 10 or any 12.x.y version. */
+    /** Is {@code true} if this is any Java 12.x.y version. */
     public static final boolean IS_JAVA_12 = getJavaVersionMatches("12");
-    /** Is {@code true} if this is Java version 10 or any 13.x.y version. */
+    /** Is {@code true} if this is any Java 13.x.y version. */
     public static final boolean IS_JAVA_13 = getJavaVersionMatches("13");
+    /** Is {@code true} if this is any Java 14.0.x version. */
+    public static final boolean IS_JAVA_14 = getJavaVersionMatches("14");
+    /** Is {@code true} if this is any Java 15.0.x version. */
+    public static final boolean IS_JAVA_15 = getJavaVersionMatches("15");
 
     /** Is {@code true} if this is an AIX Operating System. */
     public static final boolean IS_OS_AIX = getOsMatches("AIX");
@@ -181,7 +185,7 @@ public class SystemInfo {
     public static final boolean IS_OS_MACOS_SIERRA = getOsMatches("Mac OS X", "10.12");
     /** Is {@code true} if this is a macOS High Sierra Operating System. */
     public static final boolean IS_OS_MACOS_HIGH_SIERRA = getOsMatches("Mac OS X", "10.13");
-    /** Is {@code true} if this is a macOS Catalina Operating System. */
+    /** Is {@code true} if this is a macOS Mojave Operating System. */
     public static final boolean IS_OS_MASOS_MOJAVE = getOsMatches("Mac OS X", "10.14");
     /** Is {@code true} if this is a macOS Catalina Operating System. */
     public static final boolean IS_OS_MASOS_CATALINA = getOsMatches("Mac OS X", "10.15");
