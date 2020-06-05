@@ -138,6 +138,10 @@ public class SystemInfo {
     public static final boolean IS_JAVA_12 = getJavaVersionMatches("12");
     /** Is {@code true} if this is Java version 10 or any 13.x.y version. */
     public static final boolean IS_JAVA_13 = getJavaVersionMatches("13");
+    /** Is {@code true} if this is Java version 14.0.x version. */
+    public static final boolean IS_JAVA_14 = getJavaVersionMatches("14");
+    /** Is {@code true} if this is Java version 15.0.x version. */
+    public static final boolean IS_JAVA_15 = getJavaVersionMatches("15");
 
     /** Is {@code true} if this is an AIX Operating System. */
     public static final boolean IS_OS_AIX = getOsMatches("AIX");
