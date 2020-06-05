@@ -54,27 +54,27 @@ public enum JavaVersion {
     JAVA_1_8(1.8f, "8"),
 
     /**
-     * Java SE 9
+     * Java SE 9.0.x
      */
     JAVA_9(9.0f, "9"),
 
     /**
-     * Java SE 10
+     * Java SE 10.0.x
      */
     JAVA_10(10.0f, "10"),
 
     /**
-     * Java SE 11
+     * Java SE 11.0.x
      */
     JAVA_11(11.0f, "11"),
 
     /**
-     * Java SE 12
+     * Java SE 12.0.x
      */
     JAVA_12(12.0f, "12"),
 
     /**
-     * Java SE 13
+     * Java SE 13.0.x
      */
     JAVA_13(13.0f, "13"),
 
