@@ -1,4 +1,6 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.androsaces.tools</groupId>
@@ -25,7 +27,7 @@
         <developer>
             <name>Andrew Kearney</name>
             <email>andrewwkearney@gmail.com</email>
-            <timezone>Europe/London</timezone>
+            <timezone>Australia/Sydney</timezone>
         </developer>
     </developers>
 
@@ -40,8 +42,8 @@
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.junit.jupiter.version>5.6.1</project.junit.jupiter.version>
-        <project.junit.platform.version>1.6.1</project.junit.platform.version>
+        <project.junit.jupiter.version>5.7.0</project.junit.jupiter.version>
+        <project.junit.platform.version>1.7.0</project.junit.platform.version>
         <project.jdk.version>11</project.jdk.version>
     </properties>
 
@@ -78,8 +80,8 @@
 
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-slf4j-impl</artifactId>
-            <version>2.13.1</version>
+            <artifactId>log4j-slf4j18-impl</artifactId>
+            <version>2.13.3</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -105,7 +107,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-plugin</artifactId>
-                    <version>3.0.0-M3</version>
+                    <version>3.0.0-M5</version>
                     <dependencies>
                         <dependency>
                             <groupId>org.junit.jupiter</groupId>
