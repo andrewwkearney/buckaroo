@@ -189,6 +189,8 @@ public class SystemInfo {
     public static final boolean IS_OS_MASOS_MOJAVE = getOsMatches("Mac OS X", "10.14");
     /** Is {@code true} if this is a macOS Catalina Operating System. */
     public static final boolean IS_OS_MASOS_CATALINA = getOsMatches("Mac OS X", "10.15");
+    /** Is {@code true} if this is a macOS Big Sur Operating System. */
+    public static final boolean IS_OS_MACOS_BIG_SUR = getOsMatches("Mac OS X", "11.0");
     /** Is {@code true} if this is a FreeBSD Operating System. */
     public static final boolean IS_OS_FREE_BSD = getOsMatches("FreeBSD");
     /** Is {@code true} if this is an OpenBSD Operating System. */
